@@ -5,7 +5,15 @@ import java.util.Scanner;
  */
 public class YFTriangle {
     public static void main(String[] args) {
-        printYFTriangle();
+
+        int[] list = new int[] { 1, 1, 4, 2, 3, 2, 3, 0, 4, 0};
+        int temp = list[0];
+        for (int i = 1; i < list.length; i++) {
+            temp ^= list[i];
+        }
+        System.out.println(temp);
+
+        //  printYFTriangle();
     }
 
     /**
