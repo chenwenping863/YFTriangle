@@ -1,25 +1,10 @@
+
 import java.util.Scanner;
 
 /**
  * Created by chenwenping on 17/3/6.
  */
 public class YFTriangle {
-    public static void main(String[] args) {
-
-        int[] list = new int[] {1, 2, 3, 3, 3, 3, 4, 5, 6};
-
-      //  GetNumberOfK getNumberOfK = new GetNumberOfK();
-      //  getNumberOfK.getNumberOfK2(list, 3);
-        FirstNotRepeatingChar firstNotRepeatingChar = new FirstNotRepeatingChar();
-        firstNotRepeatingChar.firstNotRepeatingChar("NXWtnzyoHoBhUJaPauJaAitLWNMlkKwDYbbigdMMaYfkVPhGZcrEwp");
-       /* int temp = list[0];
-        for (int i = 1; i < list.length; i++) {
-            temp ^= list[i];
-        }
-        System.out.println(temp);*/
-
-        //  printYFTriangle();
-    }
 
     /**
      * 1 要理解下面的实现，首先要明白int数组中元素默认值为 0
