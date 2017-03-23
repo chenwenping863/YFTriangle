@@ -6,12 +6,17 @@ import java.util.Scanner;
 public class YFTriangle {
     public static void main(String[] args) {
 
-        int[] list = new int[] { 1, 1, 4, 2, 3, 2, 3, 0, 4, 0};
-        int temp = list[0];
+        int[] list = new int[] {1, 2, 3, 3, 3, 3, 4, 5, 6};
+
+      //  GetNumberOfK getNumberOfK = new GetNumberOfK();
+      //  getNumberOfK.getNumberOfK2(list, 3);
+        FirstNotRepeatingChar firstNotRepeatingChar = new FirstNotRepeatingChar();
+        firstNotRepeatingChar.firstNotRepeatingChar("NXWtnzyoHoBhUJaPauJaAitLWNMlkKwDYbbigdMMaYfkVPhGZcrEwp");
+       /* int temp = list[0];
         for (int i = 1; i < list.length; i++) {
             temp ^= list[i];
         }
-        System.out.println(temp);
+        System.out.println(temp);*/
 
         //  printYFTriangle();
     }
