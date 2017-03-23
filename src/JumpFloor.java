@@ -2,7 +2,8 @@
  * Created by chenwenping on 17/3/23.
  */
 public class JumpFloor {
-    public int JumpFloor1(int target) {
+
+    public int jumpFloor1(int target) {
         if (target <= 0) {
             return -1;
         }
@@ -15,7 +16,7 @@ public class JumpFloor {
             return 2;
         }
 
-        return JumpFloor1(target - 1) + JumpFloor1(target - 2);
+        return jumpFloor1(target - 1) + jumpFloor1(target - 2);
 
     }
 

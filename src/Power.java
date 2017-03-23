@@ -4,7 +4,9 @@
 public class Power {
 
     public double power(double base, int exponent) {
+
         double result = 1;
+
         for (int i = 0; i < Math.abs(exponent); i++) {
             result *= base;
         }

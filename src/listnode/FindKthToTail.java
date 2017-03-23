@@ -1,23 +1,18 @@
+package listnode;
+
 /**
  * Created by chenwenping on 17/3/23.
  */
 public class FindKthToTail {
 
-
-    public class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
     public ListNode findKthToTail(ListNode head,int k) {
         if (head == null || k <= 0) {
             return null;
         }
+
         int count = 0;
         int kTemp = k;
+
         ListNode frist = head;
         ListNode second = head;
 

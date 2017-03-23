@@ -1,3 +1,5 @@
+package listnode;
+
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -5,15 +7,7 @@ import java.util.Stack;
  * Created by chenwenping on 17/3/22.
  */
 public class PrintListFromTailToHead {
-    public class ListNode {
-       int val;
-        ListNode next = null;
-
-                ListNode(int val) {
-            this.val = val;
-        }
-    }
-    //d
+    //正向
     public ArrayList<Integer> printList(ListNode listNode) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
@@ -39,7 +33,7 @@ public class PrintListFromTailToHead {
         return list;
 
     }
-
+//反向
     public ArrayList<Integer> printListFromTailToHeadStack(ListNode listNode) {
         Stack<Integer> stack=new Stack<Integer>();
 

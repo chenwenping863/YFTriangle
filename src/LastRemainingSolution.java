@@ -72,14 +72,15 @@ public class LastRemainingSolution {
     }
 
     public int test(int n, int m) {
+
         if (n <= 1 || m <= 1) {
             return -1;
         }
+
         int count = n;
         int i = -1;
         int step = 0;
         int[] array = new int[n];
-
 
         while (count > 0) {
             i ++;
@@ -91,6 +92,7 @@ public class LastRemainingSolution {
             if (array[i] == -1) {
                 continue;
             }
+
             step ++;
             if (step == m) {
                 array[i] = -1;

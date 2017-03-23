@@ -1,20 +1,15 @@
+package tree;
+
 /**
  * Created by chenwenping on 17/3/22.
  */
 public class ReConstructBinaryTree {
-      //Definition for binary tree
-      public class TreeNode {
-          int val;
-          TreeNode left;
-          TreeNode right;
-          TreeNode(int x) {
-              val = x; }
-      }
-
 
     public TreeNode reConstructBinaryTree(int [] pre,int [] in) {
         return reConBTree(pre,0,pre.length-1,in,0,in.length-1);
     }
+
+
     public TreeNode reConBTree(int [] pre,int preleft,int preright,int [] in,int inleft,int inright){
     if(preleft > preright || inleft> inright) //当到达边界条件时候返回null
         return null;

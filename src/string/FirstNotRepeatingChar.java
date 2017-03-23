@@ -1,3 +1,5 @@
+package string;
+
 /**
  * Created by chenwenping on 17/3/23.
  */

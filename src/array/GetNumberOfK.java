@@ -1,7 +1,10 @@
+package array;
+
 /**
  * Created by chenwenping on 17/3/23.
  */
 public class GetNumberOfK {
+    //====================================================
     public int getNumberOfK(int [] array , int k) {
 
         if (array == null) {
@@ -18,16 +21,18 @@ public class GetNumberOfK {
 
     }
 
+    //=====================================================
     public int getNumberOfK2(int [] array , int k) {
 
         if (array == null || array.length == 0) {
-            return 0;
+            return -1;
         }
 
         int frist = getFristIndex(array, k);
         int last = getLastIndex(array, k);
+
         if (frist == -1 || last == -1) {
-            return 0;
+            return -1;
         }
 
         return last - frist + 1;

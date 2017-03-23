@@ -1,3 +1,5 @@
+package listnode;
+
 import java.util.HashMap;
 
 /**
@@ -5,14 +7,6 @@ import java.util.HashMap;
  */
 public class FindFirstCommonNode {
 
-    public class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-    }
     public ListNode findFirstCommonNode(ListNode pHead1, ListNode pHead2) {
         if (pHead1 == null || pHead2 == null) {
             return null;
@@ -37,6 +31,7 @@ public class FindFirstCommonNode {
     }
 
     public ListNode findFirstCommonNode1(ListNode pHead1, ListNode pHead2) {
+
         if (pHead1 == null || pHead2 == null) {
             return null;
         }
