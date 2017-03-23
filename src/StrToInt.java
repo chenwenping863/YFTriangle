@@ -32,4 +32,31 @@ public class StrToInt {
 
 
     }
+
+    private int test(String str) {
+        if (str == null || str.length() == 0) {
+            return -1;
+        }
+
+        char[] chars = str.toCharArray();
+
+        int flag = 0;
+        if (chars[0] == '-') {
+            flag = 1;
+        }
+        int sum = 1;
+
+        for (char c : chars) {
+            if (c == '+') {
+                continue;
+            }
+
+            if (c < '0' || c > '9') {
+                return -1;
+            }
+            sum = sum * 10 + c - '0';
+        }
+
+        return flag == 1 ? sum * -1 : sum;
+    }
 }

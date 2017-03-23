@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by chenwenping on 17/3/23.
@@ -33,4 +35,30 @@ public class FirstAppearingOnce {
         }
         return temp;
     }
+
+    public char test(String str) {
+
+         char[] chars = str.toCharArray();
+        Map<Character, Integer> map = new HashMap<>();
+        List<Character> list = new ArrayList<>();
+
+        for (char c : chars) {
+            if (map.containsKey(c)) {
+                map.put(c, map.get(c) + 1);
+            } else {
+                map.put(c, 1);
+            }
+
+            list.add(c);
+        }
+
+        for (char c : list) {
+            if (map.get(c) == 1) {
+                return c;
+            }
+        }
+
+        return '#';
+    }
+
 }

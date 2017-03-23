@@ -6,6 +6,9 @@ import java.util.Scanner;
  */
 public class YFTriangle {
 
+
+
+
     /**
      * 1 要理解下面的实现，首先要明白int数组中元素默认值为 0
      * 2 然后每一次迭代打印新的一行的元素的时候：
@@ -27,4 +30,20 @@ public class YFTriangle {
             System.out.println();
         }
     }
+
+    /*public  void  test (int len) {
+
+        int[] arr = new int[len + 1];
+        int pre = 1;
+        for (int i = 1; i <= len; i++) {
+            for (int j = 1; j <= i; j++) {
+                int current = arr[j];
+                arr[j] = pre + current;
+                pre = current;
+                System.out.print(arr[j] + " ");
+            }
+            System.out.println();
+        }
+
+    }*/
 }

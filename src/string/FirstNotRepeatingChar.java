@@ -17,9 +17,11 @@ public class FirstNotRepeatingChar {
         for (char c : charStr) {
             charTemp[(int)c]++;
         }
+        int i = -1;
 
-        for (int i = 0; i < charTemp.length; i++) {
-            if (charTemp[(int)charStr[i]] == 1) {
+        for (char c : charStr) {
+            i ++;
+            if (charTemp[(int) c] == 1) {
                 return i;
             }
         }

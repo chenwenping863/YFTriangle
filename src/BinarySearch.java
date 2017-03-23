@@ -37,7 +37,7 @@ public class BinarySearch {
         while (start <= end) {
             int mid = (start + end) / 2;
             if (a == array[mid]) {
-                return mid + 1;
+                return mid;
 
             } else if (a < array[mid]) {
                 return search(array, a, start, mid - 1);
@@ -47,4 +47,48 @@ public class BinarySearch {
         }
         return -1;
     }
+
+    private int search(int[] arr, int k) {
+
+        int start = 0;
+        int end = arr.length -1;
+        int mid = 0;
+        while (start <= end) {
+            mid = (start + end) / 2;
+
+            if (arr[mid] > k) {
+                end = mid - 1;
+            } else if (arr[mid] < k) {
+                start = mid + 1;
+            } else {
+                return mid;
+            }
+
+        }
+        return -1;
+    }
+
+    private int search1(int[] arr, int k, int start, int end) {
+        int mid = 0;
+        while (start <= end) {
+            mid = (start + end) / 2;
+
+            if (arr[mid] == k) {
+                return mid;
+            } else if (arr[mid] > k) {
+                return search1(arr, k, start, mid - 1);
+            } else {
+                return search1(arr, k, mid + 1, end);
+            }
+
+        }
+        return -1;
+
+
+    }
+
+
+
+
+
 }

@@ -49,7 +49,7 @@ public class TreeDepth {
                 break;
             while (len > 0) {// 如果当前层，还有节点
                 TreeNode t = queue.poll();
-                len--;
+                len --;
                 if (t.left != null)
                     queue.add(t.left); // 下一层节点入队
                 if (t.right != null)

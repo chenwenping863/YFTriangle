@@ -160,4 +160,20 @@ public class BinTreeTraverse {
         postOrderTraverse(root);
     }
 
+    private void insertTest(int v , Node root) {
+        if (root == null) {
+            return;
+        }
+
+        if (v != root.data) {
+            if (v < root.data) {
+                if (root.leftChild == null) {
+                    root.leftChild = new Node(v);
+                } else {
+                    insert(v, root.leftChild);
+                }
+            }
+        }
+
+    }
 }
