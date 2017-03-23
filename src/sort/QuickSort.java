@@ -24,6 +24,7 @@ public class QuickSort {
      * @param end
      */
     private void quickSort(int[] array, int start, int end) {
+
         if (start >= end || array == null) {
             return;
         }
