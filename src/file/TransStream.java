@@ -39,6 +39,4 @@ public class TransStream {
         bufr1.close();
         bufw.close();
     }
-
-
 }

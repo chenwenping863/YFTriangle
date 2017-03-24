@@ -8,14 +8,14 @@ public class QuickSort {
      * @param array
      */
     public void quickSort(int[] array) {
+
         if (array != null) {
+
             quickSort(array, 0, array.length - 1);
             for (int i = 0; i < array.length; i ++) {
                 System.out.print(array[i] + " ,");
             }
         }
-
-
     }
 
     /**
@@ -41,6 +41,7 @@ public class QuickSort {
      * @return
      */
     private int partition1(int[] array, int start, int end) {
+
         int frist = array[start];
         int i = start;
         int j = end;
@@ -59,7 +60,6 @@ public class QuickSort {
                 array[i] = array[j];
                 array[j] = temp;
             }
-
         }
 
         if (j != start) {
@@ -67,6 +67,7 @@ public class QuickSort {
             array[j] = array[start] ^ array[j];
             array[start] = array[start] ^ array[j];
             array[j] = array[start] ^ array[j];
+
         }
         return j;
     }
